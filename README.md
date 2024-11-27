@@ -85,7 +85,7 @@ This repository documents my 30-day journey of learning, implementing, and exper
 ## ✅ Progress Tracker
 | Day | Topic                                      | Status   |
 |-----|-------------------------------------------|----------|
-| 1   | Perceptrons and Logic Gates               | ✅ Done  |
+| 1   | Perceptrons and Logic Gates               | 🔲 Pending  |
 | 2   | Sigmoid Neurons                           | 🔲 Pending   |
 | 3   | Feedforward Network Design               | 🔲 Pending|
 | 4   | Gradient Descent                          | 🔲 Pending|
