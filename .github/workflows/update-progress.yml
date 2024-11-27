@@ -1,0 +1,36 @@
+name: Update Progress Tracker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Calculate Progress
+        run: |
+          # Total number of tasks in your challenge
+          TOTAL_TASKS=30
+          
+          # Count tasks marked as ✅ Done
+          COMPLETED_TASKS=$(grep -o "✅ Done" README.md | wc -l)
+          
+          # Calculate progress percentage
+          PROGRESS=$((100 * COMPLETED_TASKS / TOTAL_TASKS))
+
+          # Update progress badge in README
+          sed -i "s/Progress-[0-9]*%/Progress-${PROGRESS}%/" README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Updated progress tracker to ${PROGRESS}%"
+          git push
