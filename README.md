@@ -85,7 +85,7 @@ This repository documents my 30-day journey of learning, implementing, and exper
 | Day | Topic                                      | Status   |
 |-----|-------------------------------------------|----------|
 | 1   | Perceptrons and Logic Gates               | ✅ Done   |
-| 2   | Sigmoid Neurons                           | 🔲 Pending|
+| 2   | Sigmoid Neurons                           | ✅ Done   |
 | 3   | Feedforward Network Design               | 🔲 Pending|
 | 4   | Gradient Descent                          | 🔲 Pending|
 | 5   | MNIST Digit Classifier                    | 🔲 Pending|
