@@ -1,5 +1,6 @@
 
-![Progress](https://img.shields.io/badge/Progress-10%25-blue)
+![Progress](https://img.shields.io/badge/Progress-0%25-red)
+
 
 # 30 Days of Neural Networks 🚀
 
